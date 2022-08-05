@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--android background = ""-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#1C1C1C"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-condensed"
+            android:text="GAMES PLAYED: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+          <TextView
+              android:textSize="18sp"
+              android:id="@+id/gamesplayed"
+              android:text="0"
+              android:textColor="#ffffff"
+              android:fontFamily="sans-serif"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv1"
+                android:textSize="47sp"
+                android:textColor="#00FF53"
+                android:text="Tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              />
+            <TextView
+                android:id="@+id/tv2"
+                android:textSize="47sp"
+                android:textColor="#FDD439"
+                android:text="Tac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/tv3"
+                android:textSize="47sp"
+                android:textColor="#FC0000"
+                android:text="Toe !"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/l5"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/tictactoe"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="135dp"
+            android:layout_height="135dp" />
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textAllCaps = "true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingStart="25dp"
+            android:textAlignment="center"
+            fancy:fb_textGravity = "center_horizontal"
+            fancy:fb_textColor = "#ffffff"
+            fancy:fb_iconResource = "@drawable/ic_play_arrow_black_24dp"
+            fancy:fb_iconPosition = "right"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_textSize = "19sp"
+            fancy:fb_iconPaddingLeft = "6dp"
+            fancy:fb_iconPaddingRight = "6dp"
+            fancy:fb_iconPaddingTop = "6dp"
+            fancy:fb_iconPaddingBottom = "6dp"
+            fancy:fb_defaultColor = "#4E27F0"
+            fancy:fb_text = "1 Player VS PC"
+            fancy:fb_radius = "30dp"
+           />
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_marginTop="30dp"
+            android:textAllCaps = "true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingStart="21dp"
+            android:textAlignment="center"
+            fancy:fb_textGravity = "center_horizontal"
+            fancy:fb_textColor = "#ffffff"
+            fancy:fb_iconResource = "@drawable/ic_play_arrow_black_24dp"
+            fancy:fb_iconPosition = "right"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_textSize = "19sp"
+            fancy:fb_iconPaddingLeft = "3dp"
+            fancy:fb_iconPaddingRight = "7dp"
+            fancy:fb_iconPaddingTop = "6dp"
+            fancy:fb_iconPaddingBottom = "6dp"
+            fancy:fb_defaultColor = "#B000EE"
+            fancy:fb_text = "2 Players Mode"
+            fancy:fb_radius = "30dp"
+            android:id="@+id/btnMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/l4"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivInfo"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="@android:color/white"
+            android:background="@drawable/ic_info_outline_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/ivSettings"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@android:color/white"
+            android:background="@drawable/ic_settings_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
